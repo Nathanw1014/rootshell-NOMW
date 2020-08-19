@@ -1,7 +1,7 @@
 # rootshell-NOMW
 root shell - Not On My Watch
 
-# rationale
+## Rationale
 In a shared *persistant* lab environment of exploitable machines, some users may create a backdoor with tools like metasploit. 
 Many users may leave these shells open for other unauthenticated users
 
@@ -19,7 +19,7 @@ This script;
 -make script executable:
   `chmod +x nomw.sh`
 
-#usage
+## usage
 (Update the Network and Port variable, default port will work for Ingres services)
 `./nomw.sh`
 
