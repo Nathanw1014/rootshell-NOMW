@@ -14,7 +14,7 @@ This script;
   4: If no existing message: append an echo message to the shell users .bashrc 
   
   
-# Prerequisites
+## Prerequisites
 -nmap
 -make script executable:
   `chmod +x nomw.sh`
