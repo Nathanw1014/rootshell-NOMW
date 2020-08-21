@@ -15,8 +15,8 @@ This script;
   
   
 ## Prerequisites
--nmap
--make script executable:
+### Nmap
+### Script executable permitions:
   `chmod +x nomw.sh`
 
 ## usage
