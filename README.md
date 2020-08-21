@@ -8,10 +8,10 @@ Many users may leave these shells open for other unauthenticated users
 Appends a message to every interactive bash shell; telnet, netcat, ect
 
 This script;
-  1: scans the subnet for active root shells
-  2: creates a psudo-terminal socket connection
-  3: checks if theres an existing message
-  4: If no existing message: append an echo message to the shell users .bashrc 
+  1. scans the subnet for active root shells
+  2. creates a psudo-terminal socket connection
+  3. checks if theres an existing message
+  4. If no existing message: append an echo message to the shell users .bashrc 
   
   
 ## Prerequisites
