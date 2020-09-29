@@ -1,11 +1,11 @@
 #!/bin/bash
 echomessage='Hello,' #Requires the first 'word' in the echo message, used to check if an existing message is already set
-rootshellcommand='echo "Hello, Please dont leave default rootshells open"' #dont remove the echo, onlt change the message
+rootshellcommand='echo "Hello, Please dont leave default rootshells open"' #dont remove the echo, only change the message
 network='192.168.0.0/24' #change this to the network you're scanning
 port='1524' #default (vulnerable) Ingres service
 
-#the nmap line was quick and dirty: im sure theres plenty of better ways to do this
-#grabs the 4th line above an open port output, teh 4th line contains the ip. outputs the ip to a tmp file for later use
+#the nmap line was quick and dirty: im sure there are plenty of better ways to do this
+#grabs the 4th line above an open port output, the 4th line contains the ip. outputs the ip to a tmp file for later use
 nmap --script=banner $network -p $port | grep "open" -B 4 -A 1 | grep '192' | awk -v OFS="\n" '{ print $5 }' > outputtmp.txt
 linenumber=$(wc -l outputtmp.txt | awk '{ print $1 }')
 for x in `seq 1 "$linenumber"`
